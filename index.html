@@ -7,22 +7,22 @@
   <style>
     body {
       margin: 0;
-      background: #f2f4f7;
+      background: linear-gradient(120deg, #eef2f7, #f8fafc);
       font-family: "Segoe UI", Arial, sans-serif;
       color: #1f2d3d;
     }
 
     .container {
-      max-width: 960px;
-      margin: 80px auto;
+      max-width: 1000px;
+      margin: 70px auto;
       padding: 0 20px;
     }
 
     .card {
       background: white;
-      border-radius: 16px;
-      padding: 55px 65px;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+      border-radius: 18px;
+      padding: 55px 70px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.1);
 
       opacity: 0;
       transform: translateY(40px);
@@ -38,17 +38,25 @@
 
     .header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      gap: 35px;
       border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 28px;
+      padding-bottom: 30px;
       margin-bottom: 35px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #2563eb;
     }
 
     .name {
       font-size: 36px;
-      font-weight: 600;
       margin: 0;
+      font-weight: 600;
     }
 
     .title {
@@ -57,38 +65,37 @@
       margin-top: 6px;
     }
 
-    .tag {
-      background: #111827;
-      color: white;
-      padding: 9px 18px;
-      border-radius: 22px;
-      font-size: 14px;
-    }
-
     .section {
       margin-bottom: 34px;
     }
 
     .section h3 {
+      font-size: 22px;
       margin-bottom: 14px;
-      font-size: 21px;
-      color: #111827;
+      color: #0f172a;
     }
 
     .section p {
-      margin: 6px 0;
       font-size: 16px;
       line-height: 1.75;
-      color: #374151;
+      color: #334155;
+      margin: 6px 0;
     }
 
     .skills span {
       display: inline-block;
       margin: 8px 10px 0 0;
-      padding: 9px 16px;
+      padding: 10px 18px;
       background: #e5e7eb;
       border-radius: 22px;
       font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .skills span:hover {
+      background: #2563eb;
+      color: white;
+      transform: translateY(-3px);
     }
   </style>
 </head>
@@ -98,11 +105,11 @@
     <div class="card">
 
       <div class="header">
+        <img src="avatar.jpg" alt="Avatar" class="avatar">
         <div>
           <h1 class="name">Thân Thị Thảo Hương</h1>
           <div class="title">Third-Year Business Chinese Student</div>
         </div>
-        <div class="tag">Professional Portfolio</div>
       </div>
 
       <div class="section">
@@ -110,37 +117,28 @@
         <p><b>Student ID:</b> 2311720019</p>
         <p><b>University:</b> Foreign Trade University (FTU)</p>
         <p><b>Major:</b> Business Chinese</p>
-        <p><b>Academic Year:</b> Third-year undergraduate student</p>
       </div>
 
       <div class="section">
         <h3>Professional Profile</h3>
         <p>
-          I am a third-year Business Chinese student at Foreign Trade University
-          with a solid foundation in Chinese language and business-related subjects.
-          Through my academic training, I have developed strong skills in
-          business communication, document analysis, and basic translation
-          between Chinese and Vietnamese.
+          I am a third-year Business Chinese student with a strong academic
+          background in Chinese language and international business.
+          I am highly motivated to apply my knowledge in real-world
+          professional environments.
         </p>
         <p>
-          I am particularly interested in international trade, cross-border
-          business communication, and working in multicultural environments.
-          My academic background has helped me build a professional mindset,
-          attention to detail, and the ability to adapt quickly to new tasks.
+          My interests include business communication, translation,
+          and cross-cultural cooperation in international trade contexts.
         </p>
       </div>
 
       <div class="section">
         <h3>Academic & Practical Experience</h3>
         <p>
-          During my studies, I have completed multiple coursework projects related
-          to business Chinese, including analysis of commercial texts, translation
-          exercises, and case studies on international trade practices.
-        </p>
-        <p>
-          In addition, I have experience working with Chinese-language materials
-          such as contracts, emails, and business reports, which has strengthened
-          my understanding of professional terminology and formal writing styles.
+          Experienced in analyzing Chinese business documents, translating
+          commercial materials, and working with professional terminology
+          through coursework and academic projects.
         </p>
       </div>
 
@@ -151,16 +149,15 @@
         <span>English – Intermediate</span>
         <span>Business Communication</span>
         <span>Chinese–Vietnamese Translation</span>
-        <span>Office Software (Word, PowerPoint)</span>
+        <span>Office Software</span>
       </div>
 
       <div class="section">
         <h3>Career Objective</h3>
         <p>
-          I am seeking opportunities to further develop my professional skills
-          through internships or entry-level positions related to international
-          business, Chinese communication, or translation, where I can apply
-          my academic knowledge in a real working environment.
+          Seeking internship or entry-level opportunities related to
+          international business, Chinese communication, or translation,
+          where I can further develop my professional skills.
         </p>
       </div>
 
